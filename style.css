@@ -1,0 +1,793 @@
+body {
+    margin: 0 auto;
+    max-height: 11210px;
+    border-radius: 100px;
+}
+
+*:hover {
+    transition: 0.6s;
+}
+
+header {
+    margin: 0 auto;
+    height: 150px;
+    background-color: #030303;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin-top: 0;
+}
+
+
+.tickets {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.tickets-block {
+    width: 1440px;
+    height: 743px;
+    margin-top: 73px;
+    margin-bottom: 71px;
+}
+
+.tickets-block h2 {
+    margin-top: 0;
+}
+
+.tickets-form-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 103px;
+}
+
+.tickets-form-block img {
+    display: block;
+    width: 50%;
+    height: 550px;
+}
+
+.tickets-form {
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+    justify-content: space-between;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    padding-left: 60px;
+}
+
+.amount {
+    width: 50%;
+}
+
+.tickets-form h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.ticket-type .label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 22px;
+}
+  
+  /* Hide the browser's default radio button */
+.label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  /* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+  /* On mouse-over, add a grey background color */
+.label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+.label input:checked ~ .checkmark {
+    background-color: #D2B183;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.label input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.label .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+
+.amount h5 {
+    margin-bottom: 25px;
+    text-align: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.amount .senior {
+    padding-right: 48px;
+}
+
+.amount .basic {
+    padding-right: 51px;
+}
+
+.rectangle-amount .number-ticket {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: transparent;
+    background: transparent;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+}
+
+.rectangle-amount .sub {
+    position: absolute;
+    height: 47px;
+    width: 48px;
+    left: -45px;
+    top: -1px;
+}
+
+.rectangle-amount .add {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    top: -1px;
+    right: 40px;
+}
+
+.rectangle-amount .sub:hover, .rectangle-amount .add:hover {
+    background: #D2B183;
+}
+
+.rectangle-amount .number {
+    width: 50px;
+    height:  50px;
+    position: absolute;
+    top: -5px;
+    left: 43px;
+    background: transparent;
+    border: transparent;
+    display: inline-block;
+    width: 3em;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+#total {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    letter-spacing: 1.65px;
+}
+
+.amount p {
+    text-align: right;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+}
+
+.rectangle-amount {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    transform: translateX(119%);
+}
+
+.amount button {
+    width: 175px;
+    height: 50px;
+    background: #000000;
+    border-radius: 2px;
+    font-family: Roboto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    transform: translateX(89%);
+    cursor: pointer;
+}
+
+.amount button:hover {
+    background: #b39061;
+    transition: 1s linear;
+    border: #FFFFFF;
+}
+
+.booking {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1450px;
+    bottom: 0;
+    width: 1920px;
+    height: 845px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, .5);
+}
+
+.booking-container {
+    width: 1445px;
+    height: 845px;
+    margin: auto;
+    margin-top: 50px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+}
+
+.close img {
+    width: 25px;
+    height: 25px;
+}
+
+.close img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.booking input:hover {
+    background: #D2B183;
+} 
+
+.booking input:focus {
+    background: #b39061;
+    outline: #b39061;
+    border: #866335;
+}
+
+
+.booking-active {
+    display: block;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+}
+
+.booking .flex-container {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 91px;
+}
+
+.booking-tickets {
+    margin: 0 auto;
+    width: 400px;
+    height: 663px;
+}
+
+.booking-tickets h3 {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #9D8665;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.booking-tickets h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #710707;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.booking-tickets .line {
+    width: 400px;
+    height: 3px;
+    background: #740C11;
+    opacity: 0.9;
+    margin-bottom: 60px;
+}
+
+.date-time-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-tickets input, .booking-tickets select {
+    margin-bottom: 20px;
+}
+
+.date-time {
+    width: 190px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+}
+
+.standart-input {
+    width: 400px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+}
+
+.entry-ticket {
+    width: 400px;
+    height: 135px;
+    background: #FFFFFF;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.entry-ticket p:first-child {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #9D8665;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.entry-ticket .line {
+    width: 370px;
+    height: 2px;
+    background: #740C11;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.entry-ticket p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
+}
+
+.entry-ticket .basic {
+    margin-bottom: 22px;
+}
+
+.overview {
+    width: 525px;
+    height: 663px;
+    background: #FFFFFF;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    position: relative;
+}
+
+.overview .overview-img {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.overview h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #272727;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.overview h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #740C11;
+    opacity: 0.9;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.overview p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.svg-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.kind-amount {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    background-color: #030303;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A4A4A3;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.total {
+    margin-top: 19px;
+}
+
+.overview .total p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #030303;
+}
+
+.total-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overview .line {
+    width: 470px;
+    height: 2px;
+    background: #740C11;
+    margin-top: 9px;
+}
+
+.overview .sum-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sum-total p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: #030303;
+    margin-top: 10px;
+}
+
+.credit-cards {
+    position: relative;
+}
+
+.credit-cards p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #161615;
+    
+}
+
+.face, .retro {
+    width: 360px;
+    height: 211px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.face {
+    margin-top: 10px;
+    z-index: 1;
+    background: #BCBCBC;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 212px;
+}
+
+.visa-block {
+    position: absolute;
+    top: 34px;
+    right: 20px;
+}
+
+.visa {
+    display: flex;
+    align-items: center;
+}
+
+.yellow-bird {
+    position: absolute;
+    transform: translate(-4px, 0px);
+}
+
+.mastercard {
+    position: absolute;
+    top: 70.23px;
+    right: 20px;
+    width: 53px;
+}
+
+.master-red {
+    position: relative;
+}
+
+.master-red {
+    z-index: 1;
+}
+
+.master-yellow {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.master-title {
+    position: absolute;
+    top: 9.92px;
+    left: 1px;
+    z-index: 2;
+}
+
+.face input {
+    box-sizing: border-box;
+}
+
+.white {
+    width: 215px;
+    height: 37.5px;
+    background: #FFFFFF;
+    border: 0.5px solid #A4A4A3;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.middle-p {
+    margin-top: 0px;
+}
+
+.cartholder-p {
+    margin-top: -4px;
+
+ }
+.min-container {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.white-min {
+    width: 100px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 0.5px solid #A4A4A3;
+    display: block;
+    padding-left: 10px;
+}
+
+.white-max {
+    width: 320px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 0.567px solid #A4A4A3;
+    margin-top: 2px;
+}
+
+.retro {
+    position: absolute;
+    right: -5px;
+    top: 30px;
+    background: #939393;
+    height: 213px;
+}
+
+.black {
+    width: 360px;
+    height: 45px;
+    background: #161615;
+    margin-top: 25px;
+}
+
+.cvc {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 77px;
+}
+
+.cvc p:first-child {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #161615;
+    text-align: center;
+}
+
+.retro .white {
+    display: block;
+    width: 75px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 0.5px solid #A4A4A3;
+}
+
+.retro .back-card {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #161615;
+    text-align: left;
+    width: 55px;
+    margin: 0 auto;
+}
+
+.credit-cards:first-child {
+    width: 360px;
+    height: 211px;
+    background: #BCBCBC;
+}
+
+.credit-cards:last-child {
+    width: 360px;
+    height: 211px;
+    background: #939393;
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+    margin-top: 56px;
+    margin-left: 247px;
+    width: 220px;
+    height: 45px;
+    background: #710707;
+    opacity: 0.9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.ripple:hover {
+    background: #b39061;
+    transition: 1s linear;
+}
+
+.ripple .circle {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+  
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+  
+
+.card-number, .middle-p {
+    margin-top: 0;
+}

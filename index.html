@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Louvre</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="swiper-bundle.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+        <main>
+           
+
+            <section class="tickets" id="tickets">
+                <div class="booking">
+                    <div class="booking-container">
+                        <a href="#" class="close">
+                            <img src="assets/img/line-l.png" alt="">
+                            <img src="assets/img/line-r.png" alt="">
+                        </a>
+                        <div class="flex-container">
+                                <div class="booking-tickets">
+                                    <img src="assets/svg/booking-piramide.svg" alt="piramide">
+                                    <h3>Booking tickets</h3>
+                                    <h4>Tour to Louvre</h4>
+                                    <div class="line"></div>
+                                    <div class="date-time-container">
+                                        <input type="date" class="date-time">
+                                        <input type="time" class="date-time">
+                                    </div>
+                                    <input type="text" placeholder="Name" class="standart-input">
+                                    <input type="email" placeholder="Email" class="standart-input">
+                                    <input type="tel" placeholder="Phone" class="standart-input">
+                                    <select name="tickets-select" id="tickets-select" class="standart-input">
+                                        <option value="" selected>Permanent exhibition</option>
+                                        <option value="">Temporary exhibition</option>
+                                        <option value="">Combined Admission</option>
+                                    </select>
+                                    <div class="entry-ticket">
+                                        <p>Entry Ticket</p>
+                                        <div class="line"></div>
+                                        <p class="basic">Basic 18+ (20 €)</p>
+                                        <p>Senior 65+ (10 €)</p>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <img src="assets/img/booking-picture.jpg" alt="louvre" class="overview-img">
+                                    <h3>Overview</h3>
+                                    <h4>Tour to Louvre</h4>
+                                    <p><img src="assets/svg/date.svg" alt="" class="svg-icon"> Friday, August 19</p>
+                                    <p><img src="assets/svg/time.svg" alt="" class="svg-icon"> 16 : 30</p>
+                                    <p><img src="assets/svg/temporary.svg" alt="" class="svg-icon"> Temporary exhibition</p>
+                                    <div class="total">
+                                        <div class="total-item">
+                                            <p><span class="kind-amount">2</span>Basic (20 €)</p>
+                                            <p>40 &#8364;</p>
+                                        </div>
+                                        <div class="total-item">
+                                            <p><span class="kind-amount">2</span>Senior (10 €)</p>
+                                            <p>20 &#8364;</p>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="sum-total">
+                                        <p>Total:</p>
+                                        <p>60 &#8364;</p>
+                                    </div>
+                                    <div class="credit-cards">
+                                        <div class="face">
+                                            <div class="visa-block">
+                                                <img src="assets/svg/visa-v-yellow.svg" alt="" class="yellow-bird">
+                                                <div class="visa">
+                                                    <img src="assets/svg/visa-v.svg" alt="">
+                                                    <img src="assets/svg/visa-i.svg" alt="">
+                                                    <img src="assets/svg/visa-s.svg" alt="">
+                                                    <img src="assets/svg/visa-a.svg" alt="">
+                                                </div>
+                                            </div>    
+                                            <div class="mastercard">
+                                                <img src="assets/svg/mastercard-red.svg" alt="" class="master-red">
+                                                <img src="assets/svg/mastercard-yellow.svg" alt="" class="master-yellow">
+                                                <img src="assets/svg/mastercard.svg" alt="" class="master-title">
+                                            </div>
+                                            <p class="card-number">Card number</p>
+                                            <input type="number" class="white">
+                                            <p class="middle-p">Expiration date</p>
+                                            <div class="min-container">
+                                                <input type="number" class="white-min" value="03" min="01" max="12">
+                                                <input type="number" class="white-min" value="2024">
+                                            </div>
+                                            <p class="cartholder-p">Cardholder name</p>
+                                            <input type="text" class="white-max">
+                                        </div>
+                                        <div class="retro">
+                                            <div class="black"></div>
+                                            <div class="cvc">
+                                                <p>CVC/CVV</p>
+                                                <input type="number"  class="white">
+                                                <p class="back-card">The last 
+                                                    3 or 4 digits on back of the card</p>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                    <button class="ripple">Book</button>
+                                </div>
+                        </div>  
+                        
+                    </div>
+                </div>    
+                <div class="container">
+                    <div class="tickets-block">
+                        <h2 class="section-title color-beige underline">BUY TICKETS</h2>
+                        <div class="tickets-form-block">
+                            <img src="assets/img/tikets-picture.jpg" alt="picture">
+                            <div class="tickets-form">
+                                <div class="ticket-type">
+                                    <h5>Ticket Type</h5>
+                                    <label class="label">Permanent exhibition
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="label">Temporary exhibition
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="label">Combined Admission
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                </div>
+                                <div class="amount">
+                                    <h5>Amount</h5>
+                                    <p>Basic 18+</p>
+                                    <div class="rectangle-amount">
+                                        <button class="sub number-ticket" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                                        <button class="add number-ticket" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    </div>
+                                    <p>Senior 65+</p>
+                                    <div class="rectangle-amount">
+                                        <button class="sub number-ticket" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                                        <button class="add number-ticket" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    </div>
+                                    <h5 id="total">Total €220</h5>
+                                    <button id="buy-now" class="ripple">Buy Now</button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+
+        </main>
+       
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>  
+    <script src="gallery.js"></script>  
+    <script src="ripple.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
